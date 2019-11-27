@@ -24,16 +24,17 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
 
 ### Module을 다루는 키워드
 
-1. [CommonJS] : `require (참조 하고자 하는 모듈의 경로)`
+####CommonJS
+ : `require (참조 하고자 하는 모듈의 경로)`
 
-      **module.exports의 형태**  
-        `module.exports={...}`  
-        `module.exports= 값`  
-        `module.exports.키_이름=값`  
-        `exports.키_이름=값`  
+**module.exports의 형태**  
+`module.exports={...}`  
+`module.exports= 값`  
+`module.exports.키_이름=값`  
+`exports.키_이름=값`  
         
-    [index.js]
-    ```JavaScript
+[index.js]
+```JavaScript
    /***
    * 1. 원의 넓이를 구하는 공식
    * 2. PI 정의
@@ -45,15 +46,15 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
    
    const result = getCircleArea(2);
    console.log(result);
-   ```
-   실행 명령어  
-   ```commend line
-   $ node index.js
-   ```
-   위의 `index.js`코드를 모듈화 한다면 
+```
+실행 명령어  
+```commend line
+$ node index.js
+```
+위의 `index.js`코드를 모듈화 한다면 
    
-   [mathUtil.js]
-   ```JavaScript
+[mathUtil.js]
+```JavaScript
     const PI = 3.14;
     const getCircleArea = r => r * r * PI;
    
@@ -61,20 +62,20 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
       PI,
       getCircleArea
    }
-   ```
-   exports를 이용하여 개별적으로 내보낼때  
-   [mathUtil.js]
-   ```JavaScript
+```
+exports를 이용하여 개별적으로 내보낼때  
+[mathUtil.js]
+```JavaScript
    const PI = 3.14;
    const getCircleArea = r => r * r * PI;
    
    exports.PI = PI;
    exports.getCircleArea;
-   ```
-   *[mathUtil.js] 둘 중 한가지 방법으로만 사용해야 내보내기의 기능 유실을 막을 수 있다.*
+```
+*[mathUtil.js] 둘 중 한가지 방법으로만 사용해야 내보내기의 기능 유실을 막을 수 있다.*
    
-   [index.js]
-   ```JavaScript
+[index.js]
+```JavaScript
    /***
    * 1. 원의 넓이를 구하는 공식
    * 2. PI 정의
@@ -85,25 +86,26 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
    
    const result = getCircleArea(2);
    console.log(result);
-   ```
+```
  
-2. [ESM] : `import 모듈_이름 from 모듈_위치`  
-           **기능을 내보내는 키워드**  
-           `export`  
-           `export default`
+####ESM 
+: `import 모듈_이름 from 모듈_위치`  
+**기능을 내보내는 키워드**  
+`export`  
+`export default`
            
-    *NodeJS환경에서는 CommonJS모듈을 기본으로 사용하기 때문에 ESM방식의 모듈을 사용하려면 별도의 설치가 필요하다.*
-    ```commend line
+*NodeJS환경에서는 CommonJS모듈을 기본으로 사용하기 때문에 ESM방식의 모듈을 사용하려면 별도의 설치가 필요하다.*
+```commend line
     $ npm install esm
     ```
     실행 명령어  
     ( -r을 추가 하게 되면 다른 모듈의 표준`commonJS/ESM 모두 가능`도 실행 할 수 있게 해준다.)
     ```commend line
     $ node -r esm index.js
-    ```
-   1\. `export`  
-    [index.js]
-   ```JavaScript
+```
+1\. `export`  
+[index.js]
+```JavaScript
    /***
    * 1. 원의 넓이를 구하는 공식
    * 2. PI 정의
@@ -114,24 +116,24 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
    
    const result = getCircleArea(2);
    console.log(result);
-   ```
-    [mathUtil.js]
-    ```JavaScript
+```
+[mathUtil.js]
+```JavaScript
     export {
        PI,
        getCircleArea
    }
-    ```
-   2\. `export default`  
-    [mathUtil.js]
-    ```JavaScript
+```
+2\. `export default`  
+[mathUtil.js]
+```JavaScript
     export default {
        PI,
        getCircleArea
    }
-    ```
-    [index.js]
-   ```JavaScript
+```
+[index.js]
+```JavaScript
    /***
    * 1. 원의 넓이를 구하는 공식
    * 2. PI 정의
@@ -142,4 +144,4 @@ ECMAScript에서 정의한 모듈표준화인 ESM이다.
    
    const result = mathUtil.getCircleArea(2);
    console.log(result);
-   ```
+```
