@@ -9,7 +9,6 @@ import siteShape from '../shapes/site';
 
 const ghLink = <a href="https://github.com/knpwrs">my GitHub</a>;
 const patsLink = <a href="http://www.patriots.com/">New England Patriots</a>;
-const cdpLink = <a href="http://cursordanceparty.com">Cursor Dance Party</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -92,83 +91,6 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>Progressively ported features from Backbone and JavaScript to React/Redux and TypeScript.</li>
         <li>Implemented virtualized, fuzzy-searchable emoji picker.</li>
         <li>Implemented inline emoji typeahead with fuzzy search.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>SHIFT Media &middot; Front End Lead &middot; Boston, MA</h5>
-        <h5>September 2017 - April 2019</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Worked with React, Redux, Electron, and modern JavaScript (TypeScript, Flow, JSX).</li>
-        <li>Designed and implemented WebSocket communication layer with sagas.</li>
-        <li>Designed and implemented generic upload queueing system with sagas.</li>
-        <li>Designed and implemented SVG-based annotation tools.</li>
-        <li>Designed and implemented cross-window Redux store sync for Electron.</li>
-        <li>Mentored junior engineers and presented multiple talks about advanced concepts in JavaScript and React/Redux.</li>
-        <li>Hired as Senior Software Engineer. Promoted to Lead Software Engineer in March 2018.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>Candescent Health &middot; Software Engineer &middot; Remote (Waltham, MA)</h5>
-        <h5>April 2016 - August 2017</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Worked with React, Redux, Vue, Angular, Node, PHP, MySQL, and Docker.</li>
-        <li>Used Flyway for database migrations across multiple client environments.</li>
-        <li>Designed and created a dashboard for monitoring doctors and their workloads across multiple facilities.</li>
-        <li>Prototyped Electron applications with native integrations.</li>
-        <li>Open-sourced a Babel plugin for automatic dependency injection in Angular.</li>
-        <li>Presented multiple tech talks on modern JavaScript and CSS best practices.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>IBM &middot; Staff Software Engineer &middot; Littleton, MA</h5>
-        <h5>January 2013 - April 2016</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Worked with React, Redux, Dojo, and OpenSocial, continually integrating bleeding-edge web technologies.</li>
-        <li>Focused on modular, high-performance code capable of running in varying environments with varying content security policies.</li>
-        <li>Developed front-end request layer mimicking Dojo’s request API providing automatic reauthentication with no changes required to
-          client code.
-        </li>
-        <li>Automated builds and deployments with Jenkins.</li>
-        <li>Conducted technical interviews for intern and new hire candidates.</li>
-        <li>Contributed Less Compilation to OpenNTF JavaScript Aggregator.</li>
-        <li>Prototyped PostCSS / AutoPrefixer support for OpenNTF JavaScript Aggregator.</li>
-        <li>Created a mock browser environment for load testing Verse’s offline capabilities.</li>
-        <li>Created shim for testing New Relic Synthetics offline.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>IBM &middot; Smarter Cities Technical Coop &middot; Remote (Raleigh, NC)</h5>
-        <h5>August 2012 - November 2012</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Worked with the Dojo Toolkit, OpenStreetMap, and OpenLayers.</li>
-        <li>Developed a prototype for an IBM Smarter Cities data visualization product.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>IBM &middot; Extreme Blue Innovation Lab Technical Intern &middot; Austin, TX</h5>
-        <h5>May 2012 - August 2012</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Led a team of software developers and business people to create a mobile application development solution targeted at non-technical users.</li>
-        <li>Worked with an agile scrum process using Rational Team Concert to manage tasks.</li>
-        <li>Worked with several technologies including Java, JavaScript, and HTML5.</li>
-        <li>Project features an intuitive drag and drop interface which allows non-technical users to create their own applications out of functional building blocks.</li>
-        <li>Presented technical project details to multiple IBM executives.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>Big Y Foods, Inc &middot; Technology Administrator / Systems Development &middot; Springfield, MA</h5>
-        <h5>January 2010 - May 2012</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Worked with ASP.NET MVC (C#) and Microsoft SQL Server.</li>
-        <li>Created stored procedures for Microsoft SQL Server to generate reports on various data collected from stores.</li>
-        <li>Created an internal web application to help corporate employees better manage their daily tasks. Application features on-call phone listing and a time-off request form where corporate employees could find coverage if they needed time off.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>Personal Projects &middot; github.com/un2cho &middot; chos</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>My personal GitHub profile contains personal projects and contributions to various open source projects. Notable open-source contributions include the MongoDB NodeJS Driver, JSDom, and the Frontend Maven Plugin.</li>
-        <li>{cdpLink} is a tech demo of WebSockets and HTML5 Canvas. Users see the cursors of all other connected users as they move around. Survived the front page of reddit.</li>
       </Ul>
       <H4>Education</H4>
       <ResumeHeader>
