@@ -51,15 +51,14 @@ const SiteHeader = () => (
     <H1>
       <Small>With</Small>
       {' '}
-      <Link to="/">Ken Powers</Link>
+      <Link to="/">Cho&</Link>
       {' '}
-      <Small>comes Ken Responsibility</Small>
+      <Small>comes Stream of consciousnes</Small>
     </H1>
     <Nav>
       <Link to="/">Blog</Link>
       <Link to="/about">About</Link>
-      <A href="https://github.com/knpwrs">GitHub</A>
-      <A href="https://twitter.com/knpwrs">Twitter</A>
+      <A href="https://github.com/un2cho">GitHub</A>
     </Nav>
   </Header>
 );
