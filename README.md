@@ -1,8 +1,8 @@
-# knpw.rs
+# Cho&
 
-With Ken Powers comes Ken Responsibility.
+With Cho& comes STREAM OF CONSCIOUSNES.
 
-This is the source code for my [personal website][web]. Built with [GatsbyJS]
+This is the source code for [Ken Powers][web]. Built with [GatsbyJS]
 and deployed to [Netlify].
 
 ## License
