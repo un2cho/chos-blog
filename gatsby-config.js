@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    author: 'Ken Powers',
-    title: 'Ken Powers',
-    siteUrl: 'https://knpw.rs',
-    description: 'With Ken Powers Comes Ken Responsibility',
+    author: 'Cho&',
+    title: 'Cho&',
+    siteUrl: 'https://uaa.app',
+    description: 'With Cho& Comes STREAM OF CONSCIOUSNES',
   },
   plugins: [
     'gatsby-plugin-catch-links',
@@ -40,7 +40,7 @@ module.exports = {
     }, {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://knpw.rs',
+        siteUrl: 'https://uaa.app',
       },
     }, {
       resolve: 'gatsby-plugin-feed',

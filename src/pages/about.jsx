@@ -6,12 +6,10 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import Layout from '../components/layout';
 import siteShape from '../shapes/site';
-import excelSetupPng from '../images/excel-setup-diagram.png';
 
 const ghLink = <a href="https://github.com/knpwrs">my GitHub</a>;
 const patsLink = <a href="http://www.patriots.com/">New England Patriots</a>;
 const cdpLink = <a href="http://cursordanceparty.com">Cursor Dance Party</a>;
-const esdLink = <a href={excelSetupPng}>full setup diagram</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -78,15 +76,12 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       <H3>Résumé</H3>
       <H4>Languages</H4>
       <Ul>
-        <li>Proficient in: JavaScript (Universal Node / Browser, TypeScript, React), HTML5, CSS3 (SCSS)</li>
-        <li>Familiar with: C# and .NET Framework, Java, Scala, Ruby, Swift, Rust, SQL</li>
+        <li>Proficient in: JavaScript (TypeScript, React), HTML5, CSS3 (SCSS)</li>
       </Ul>
       <H4>Software</H4>
       <Ul>
-        <li>Database: PostgreSQL, MySQL, SQL Server, MongoDB, Redis</li>
-        <li>Server: nginx, Apache httpd</li>
-        <li>Tools: Docker, Git, Jenkins, Travis CI</li>
-        <li>Platforms: macOS, Linux / Unix, Microsoft Windows</li>
+        <li>Tools: WebStorm(VScode), Git, PhotoShop, 3D max, unreal engine</li>
+        <li>Platforms: macOS, Microsoft Windows</li>
       </Ul>
       <H4>Experience</H4>
       <ResumeHeader>
@@ -169,24 +164,11 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>Created an internal web application to help corporate employees better manage their daily tasks. Application features on-call phone listing and a time-off request form where corporate employees could find coverage if they needed time off.</li>
       </Ul>
       <ResumeHeader>
-        <h5>Personal Projects &middot; github.com/knpwrs &middot; knpw.rs</h5>
+        <h5>Personal Projects &middot; github.com/un2cho &middot; chos</h5>
       </ResumeHeader>
       <Ul>
         <li>My personal GitHub profile contains personal projects and contributions to various open source projects. Notable open-source contributions include the MongoDB NodeJS Driver, JSDom, and the Frontend Maven Plugin.</li>
         <li>{cdpLink} is a tech demo of WebSockets and HTML5 Canvas. Users see the cursors of all other connected users as they move around. Survived the front page of reddit.</li>
-      </Ul>
-      <H4>Volunteer Work</H4>
-      <ResumeHeader>
-        <h5>ExcelChurch &middot; Technical Director &middot; Leominster, MA</h5>
-        <h5>February 2014 - July 2019</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Designed and implemented live production setup using ProPresenter, Reaper, Lightkey, Wirecast, and dedicated production hardware.</li>
-        <li>Designed and implemented an RTMP streaming relay in the cloud with Docker, Nginx, and Stunnel.</li>
-        <li>Set up electronic drums to trigger sounds with Superior Drummer and set up external MIDI controller running through the drums to control click tracks, backing tracks, lights, projection, and recording.</li>
-        <li>Performed weekly setup and teardown of professional A/V equipment including sound, recording, video, live streaming, and projection.</li>
-        <li>Provided hands-on training, recorded instructional videos, and wrote documentation for other volunteers.</li>
-        <li>See {esdLink}.</li>
       </Ul>
       <H4>Education</H4>
       <ResumeHeader>
@@ -195,18 +177,6 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </ResumeHeader>
       <Ul>
         <li>Received Bachelor’s of Science in Computer Science.</li>
-        <li>Received two awards for outstanding performance in individual classes.</li>
-        <li>Made the Dean’s List three out of four semesters.</li>
-      </Ul>
-      <ResumeHeader>
-        <h5>Springfield Technical Community College · Springfield, MA · 3.8 GPA</h5>
-        <h5>2009 - 2011</h5>
-      </ResumeHeader>
-      <Ul>
-        <li>Received Associate’s of Science in Engineering and Science Transfer (Focus on Computer Science).</li>
-        <li>Received two annual awards for outstanding overall performance.</li>
-        <li>Completed two directed studies (one in Computer Science and one in Math).</li>
-        <li>Made the Dean’s List all four semesters.</li>
       </Ul>
     </main>
   </Layout>
