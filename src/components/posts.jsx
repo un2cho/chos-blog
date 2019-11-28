@@ -6,6 +6,7 @@ import groupBy from 'lodash/groupBy';
 import last from 'lodash/last';
 import { Link as GatsbyLink } from 'gatsby';
 import TagsList from './tags-list';
+import { DiscussionEmbed } from 'disqus-react'
 
 const groupPosts = posts => groupBy(posts, p => last(p.frontmatter.date.split(' ')));
 
@@ -41,6 +42,11 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
   },
 }));
 
+const disqusConfig = {
+  shortname: process.env.stream-of-consciousnes,
+  config: { identifier: slug, title },
+}
+
 const Posts = ({ posts }) => {
   const grouped = groupPosts(posts);
   const years = Object.keys(grouped).sort().reverse();
@@ -61,6 +67,11 @@ const Posts = ({ posts }) => {
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </time>
               </Header>
+              <Global>
+                <PageBody>
+                  <DiscussionEmbed {...disqusConfig} />
+                </PageBody>
+              </Global>
               <footer>
                 <TagsList tags={post.frontmatter.tags} />
               </footer>

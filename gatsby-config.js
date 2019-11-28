@@ -5,7 +5,6 @@ module.exports = {
     title: 'Cho&',
     siteUrl: 'https://uaa.app',
     description: 'With Cho& Comes STREAM OF CONSCIOUSNES',
-    disqusShortname: 'stream-of-consciousnes',
   },
   plugins: [
     'gatsby-plugin-catch-links',
