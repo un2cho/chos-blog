@@ -28,6 +28,7 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
   },
 }));
 
+
 const PostNav = ({ prev, post }) => {
   const link = post
     ? <Link to={post.frontmatter.path}>{prev ? 'Previous Post' : 'Next Post'}</Link>

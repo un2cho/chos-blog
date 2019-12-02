@@ -45,7 +45,7 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
 const disqusConfig = {
   shortname: process.env.stream-of-consciousnes,
   config: { identifier: slug, title },
-}
+};
 
 const Posts = ({ posts }) => {
   const grouped = groupPosts(posts);
@@ -67,13 +67,13 @@ const Posts = ({ posts }) => {
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </time>
               </Header>
-              <Global>
-                <PageBody>
-                  <DiscussionEmbed {...disqusConfig} />
-                </PageBody>
-              </Global>
               <footer>
                 <TagsList tags={post.frontmatter.tags} />
+                <Global>
+                  <PageBody>
+                    <DiscussionEmbed {...disqusConfig} />
+                  </PageBody>
+                </Global>
               </footer>
             </Article>
           ))}
