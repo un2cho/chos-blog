@@ -7,8 +7,7 @@ import styled from '@emotion/styled';
 import Layout from '../components/layout';
 import siteShape from '../shapes/site';
 
-const ghLink = <a href="https://github.com/knpwrs">my GitHub</a>;
-const patsLink = <a href="http://www.patriots.com/">New England Patriots</a>;
+const ghLink = <a href="https://github.com/un2cho">my GitHub</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -56,50 +55,84 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       <H2>About</H2>
       <blockquote>
         <P>
-          &quot;But the Holy Spirit produces this kind of fruit in our lives:
-          love, joy, peace, patience, kindness, goodness, faithfulness,
-          gentleness, and self-control. There is no law against these
-          things!&quot; - The Apostle Paul, to the Galatians
+          &quot;10 years as a 3d environment game-graphic designer, 3 years as a leather craftsman, and now preparing a web front-end engineer.&quot;
         </P>
       </blockquote>
       <P>
-        I am a software engineer living and working in Massachusetts. I work
-        extensively in Universal JavaScript and HTML5 and have experience in many
-        other technologies. Take a look at {ghLink} to see my personal projects.
+        I am a software engineer living and working in Korean-Pangyo.
+        I've been working as a 3d environment game-graphic designer for the last decade and now preparing a web front-end engineer.
+        Take a look at {ghLink} to see my personal projects.
       </P>
       <P>
-        I also enjoy music, play drums and bass guitar, and am a big time fan of
-        the {patsLink}. Feel free to take a look around and contact me with any
-        questions.
+        Feel free to take a look around and contact me with any questions.
       </P>
-      <H3>Résumé</H3>
-      <H4>Languages</H4>
+      <H2>Résumé</H2>
+      <H3>Languages</H3>
       <Ul>
-        <li>Proficient in: JavaScript (TypeScript, React), HTML5, CSS3 (SCSS)</li>
+        <li>JavaScript (TypeScript, React), HTML5, CSS3 (SCSS)</li>
       </Ul>
-      <H4>Software</H4>
+      <H3>Software</H3>
       <Ul>
         <li>Tools: WebStorm(VScode), Git, PhotoShop, 3D max, unreal engine</li>
         <li>Platforms: macOS, Microsoft Windows</li>
       </Ul>
-      <H4>Experience</H4>
+      <H3>Experience</H3>
       <ResumeHeader>
-        <h5>Signal Messenger &middot; Desktop Developer &middot; Remote</h5>
-        <h5>April 2019 - Present</h5>
+        <H4>Neowiz &middot; Bless studio</H4>
+        <h5>3d environment game-graphic designer</h5>
+        <h5>May 2010 - April 2014</h5>
       </ResumeHeader>
       <Ul>
-        <li>Progressively ported features from Backbone and JavaScript to React/Redux and TypeScript.</li>
-        <li>Implemented virtualized, fuzzy-searchable emoji picker.</li>
-        <li>Implemented inline emoji typeahead with fuzzy search.</li>
+        <li>3d environment object modeling</li>
+        <li>Used a Unreal to create terrains making and Configuration settings.</li>
       </Ul>
-      <H4>Education</H4>
       <ResumeHeader>
-        <h5>University of Massachusetts Amherst &middot; Amherst, MA &middot; 3.7 GPA</h5>
-        <h5>2011 - 2013</h5>
+        <H4>LivePlex &middot; Dragona</H4>
+        <h5>3d environment object modeling work.</h5>
+        <h5>January 2009 - April 2010</h5>
       </ResumeHeader>
       <Ul>
-        <li>Received Bachelor’s of Science in Computer Science.</li>
+        <li>3d environment object modeling and used a Unreal to create terrains making work.</li>
       </Ul>
+      <ResumeHeader>
+        <H4>NCsoft &middot; L3, GA(aion support), HON</H4>
+        <h5>3d game-graphic designer &middot; Fulltime</h5>
+        <h5>January 2007 - December 2008</h5>
+      </ResumeHeader>
+      <Ul>
+        <li>L3 ,GA(aion support) 3d environment object modeling work.</li>
+        <li>3d environment object modeling work and used a gamebryo to create a fields in Smash-Star.</li>
+      </Ul>
+      <ResumeHeader>
+        <H4>Gamasoft &middot; Monato Esprit</H4>
+        <h5>3d game-graphic designer </h5>
+        <h5>March 2006 - October 2006</h5>
+      </ResumeHeader>
+      <Ul>
+        <li>3d environment object modeling.</li>
+      </Ul>
+      <ResumeHeader>
+        <H4>Move games &middot; Digimon RPG, Woongjin E&G</H4>
+        <h5>2d & 3d game-graphic designer </h5>
+        <h5>June 2004 - February 2006</h5>
+      </ResumeHeader>
+      <Ul>
+        <li>Woongjin E&G UI work,  2D background graphics making.</li>
+        <li>Digimon RPG 3D Character modeling.</li>
+      </Ul>
+      <H3>Education</H3>
+      <ResumeHeader>
+        <h4>Hanyang Women's University &middot; Korea Seoul </h4>
+        <h5>March 2000 - February 2002</h5>
+      </ResumeHeader>
+      <Ul>
+        <li>Department of Computer Information &middot; Internet Information.</li>
+      </Ul>
+      <H3>Certificate</H3>
+      <ResumeHeader>
+        <h4>Craftsman Computer Graphics Operation </h4>
+        <h5>Human Resources Development Service of Korea &middot; 2001. 04. 16</h5>
+      </ResumeHeader>
     </main>
   </Layout>
 );
