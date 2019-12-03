@@ -66,19 +66,19 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       <P>
         Feel free to take a look around and contact me with any questions.
       </P>
-      <H2>Résumé</H2>
-      <H3>Languages</H3>
+      <H3>Résumé</H3>
+      <H4>Languages</H4>
       <Ul>
         <li>JavaScript (TypeScript, React), HTML5, CSS3 (SCSS)</li>
       </Ul>
-      <H3>Software</H3>
+      <H4>Software</H4>
       <Ul>
         <li>Tools: WebStorm(VScode), Git, PhotoShop, 3D max, unreal engine</li>
         <li>Platforms: macOS, Microsoft Windows</li>
       </Ul>
-      <H3>Experience</H3>
+      <H4>Experience</H4>
       <ResumeHeader>
-        <H5>Neowiz &middot; Bless studio</H5>
+        <h5>Neowiz &middot; Bless studio</h5>
         <h5>3d environment game-graphic designer</h5>
         <h5>May 2010 - April 2014</h5>
       </ResumeHeader>
@@ -87,7 +87,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>Used a Unreal to create terrains making and Configuration settings.</li>
       </Ul>
       <ResumeHeader>
-        <H5>LivePlex &middot; Dragona</H5>
+        <h5>LivePlex &middot; Dragona</h5>
         <h5>3d game-graphic designer</h5>
         <h5>January 2009 - April 2010</h5>
       </ResumeHeader>
@@ -95,7 +95,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>3d environment object modeling and used a Unreal to create terrains making work.</li>
       </Ul>
       <ResumeHeader>
-        <H5>NCsoft &middot; L3, GA(aion support), HON</H5>
+        <h5>NCsoft &middot; L3, GA(aion support), HON</h5>
         <h5>3d game-graphic designer</h5>
         <h5>January 2007 - December 2008</h5>
       </ResumeHeader>
@@ -104,7 +104,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>3d environment object modeling work and used a gamebryo to create a fields in Smash-Star.</li>
       </Ul>
       <ResumeHeader>
-        <H5>Gamasoft &middot; Monato Esprit</H5>
+        <h5>Gamasoft &middot; Monato Esprit</h5>
         <h5>3d game-graphic designer</h5>
         <h5>March 2006 - October 2006</h5>
       </ResumeHeader>
@@ -112,7 +112,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>3d environment object modeling.</li>
       </Ul>
       <ResumeHeader>
-        <H5>Move games &middot; Digimon RPG, Woongjin E&G</H5>
+        <h5>Move games &middot; Digimon RPG, Woongjin E&G</h5>
         <h5>2d & 3d game-graphic designer</h5>
         <h5>June 2004 - February 2006</h5>
       </ResumeHeader>
