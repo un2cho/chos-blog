@@ -88,7 +88,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </Ul>
       <ResumeHeader>
         <H5>LivePlex &middot; Dragona</H5>
-        <h5>3d environment object modeling work.</h5>
+        <h5>3d game-graphic designer</h5>
         <h5>January 2009 - April 2010</h5>
       </ResumeHeader>
       <Ul>
@@ -96,7 +96,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </Ul>
       <ResumeHeader>
         <H5>NCsoft &middot; L3, GA(aion support), HON</H5>
-        <h5>3d game-graphic designer &middot; Fulltime</h5>
+        <h5>3d game-graphic designer</h5>
         <h5>January 2007 - December 2008</h5>
       </ResumeHeader>
       <Ul>
@@ -105,7 +105,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </Ul>
       <ResumeHeader>
         <H5>Gamasoft &middot; Monato Esprit</H5>
-        <h5>3d game-graphic designer </h5>
+        <h5>3d game-graphic designer</h5>
         <h5>March 2006 - October 2006</h5>
       </ResumeHeader>
       <Ul>
@@ -113,7 +113,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </Ul>
       <ResumeHeader>
         <H5>Move games &middot; Digimon RPG, Woongjin E&G</H5>
-        <h5>2d & 3d game-graphic designer </h5>
+        <h5>2d & 3d game-graphic designer</h5>
         <h5>June 2004 - February 2006</h5>
       </ResumeHeader>
       <Ul>
