@@ -11,7 +11,9 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-favicon',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp', {
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-disqus',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
@@ -42,6 +44,11 @@ module.exports = {
       options: {
         siteUrl: 'https://uaa.app',
       },
+    }, {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `stream-of-consciousnes`
+      }
     }, {
       resolve: 'gatsby-plugin-feed',
       options: {
