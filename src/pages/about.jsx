@@ -9,7 +9,7 @@ import siteShape from '../shapes/site';
 
 const ghLink = <a href="https://github.com/un2cho">my GitHub</a>;
 const hotot = <a href="https://hotot.modoo.at">Hotot</a>;
-const pf = <a href="pf/portfolio.jsx">Game Graphic Portfolio</a>;
+const pf = <a href="portfolio.jsx">Game Graphic Portfolio</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
