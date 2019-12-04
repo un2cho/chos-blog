@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 import siteShape from '../shapes/site';
 
 const ghLink = <a href="https://github.com/un2cho">my GitHub</a>;
-const hotot = <a href="https://hotot.modoo.at">HOTOT</a>;
+const hotot = <a href="https://hotot.modoo.at">hotot</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -62,7 +62,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       <P>
         I am a software engineer preparing in Korean-Pangyo.<br />
         I&apos;ve been working as a 3d environment game-graphic designer for the last decade and now preparing a web front-end engineer
-        and few years as a leather craftsman.<br />
+        and I ran a Leather Craft Studio called hotot.<br />
         Take a look at {ghLink} and {hotot} to see my personal projects.
       </P>
       <P>
