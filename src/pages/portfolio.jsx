@@ -30,8 +30,8 @@ Portfolio.propTypes = {
 
 export default Portfolio;
 
-export const aboutPageQuery = graphql`
-  query AboutPageSiteMetadata {
+export const portfolioPageQuery = graphql`
+  query PortfolioPageSiteMetadata {
     site {
       siteMetadata {
         title
