@@ -9,5 +9,5 @@ module.exports = [{
       options: {"plugins":[],"trackingId":"UA-46190412-1"},
     },{
       plugin: require('../node_modules/gatsby-plugin-canonical-urls/gatsby-browser.js'),
-      options: {"plugins":[],"siteUrl":"https://knpw.rs"},
+      options: {"plugins":[],"siteUrl":"https://uaa.app"},
     }]

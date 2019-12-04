@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import siteShape from '../shapes/site';
 
 const ghLink = <a href="https://github.com/un2cho">my GitHub</a>;
+const hotot = <a href="https://hotot.modoo.at">Leather Craft Studio</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -59,9 +60,9 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         </P>
       </blockquote>
       <P>
-        I am a software engineer living and working in Korean-Pangyo.
-        I've been working as a 3d environment game-graphic designer for the last decade and now preparing a web front-end engineer.
-        Take a look at {ghLink} to see my personal projects.
+        I am a software engineer preparing in Korean-Pangyo.
+        I&apos;ve been working as a 3d environment game-graphic designer for the last decade and now preparing a web front-end engineer.
+        Take a look at {ghLink} and {hotot} to see my personal projects.
       </P>
       <P>
         Feel free to take a look around and contact me with any questions.
@@ -77,6 +78,15 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         <li>Platforms: macOS, Microsoft Windows</li>
       </Ul>
       <H4>Experience</H4>
+      <ResumeHeader>
+        <h5>{hotot} &middot; Leather Craft Studio</h5>
+        <h5>leather craftsman & instructor</h5>
+        <h5>June 2014 - December 2016</h5>
+      </ResumeHeader>
+      <Ul>
+        <li>Handmade leather work on saddle-stitch base.</li>
+        <li>I taught the art of leather craft to the people who came to see my work.</li>
+      </Ul>
       <ResumeHeader>
         <h5>Neowiz &middot; Bless studio</h5>
         <h5>3d environment game-graphic designer</h5>
@@ -122,7 +132,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </Ul>
       <H3>Education</H3>
       <ResumeHeader>
-        <h4>Hanyang Women's University &middot; Korea Seoul </h4>
+        <h4>Hanyang Women&apos;s University &middot; Korea Seoul </h4>
         <h5>March 2000 - February 2002</h5>
       </ResumeHeader>
       <Ul>
@@ -131,8 +141,12 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       <H3>Certificate</H3>
       <ResumeHeader>
         <h4>Craftsman Computer Graphics Operation </h4>
-        <h5>Human Resources Development Service of Korea &middot; 2001. 04. 16</h5>
       </ResumeHeader>
+      <Ul>
+        <li>
+          Human Resources Development Service of Korea &middot; 2001. 04. 16
+        </li>
+      </Ul>
     </main>
   </Layout>
 );

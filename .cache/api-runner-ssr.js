@@ -15,7 +15,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/alicemj/chos/node_modules/gatsby-plugin-canonical-urls/gatsby-ssr'),
-      options: {"plugins":[],"siteUrl":"https://knpw.rs"},
+      options: {"plugins":[],"siteUrl":"https://uaa.app"},
     },{
       plugin: require('/Users/alicemj/chos/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[],"query":"{\n          site {\n            siteMetadata {\n              title\n              description\n              siteUrl\n            }\n          }\n        }","feeds":[{"query":"{\n            allMarkdownRemark(\n              limit: 1000,\n              sort: { order: DESC, fields: [frontmatter___date] }\n            ) {\n              edges {\n                node {\n                  html\n                  frontmatter {\n                    title\n                    date\n                    path\n                  }\n                }\n              }\n            }\n          }","output":"/rss.xml"}]},
