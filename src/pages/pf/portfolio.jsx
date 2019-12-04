@@ -4,12 +4,11 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import Layout from '../components/layout';
-import siteShape from '../shapes/site';
+import Layout from '../../components/layout';
+import siteShape from '../../shapes/site';
 
 const ghLink = <a href="https://github.com/un2cho">my GitHub</a>;
 const hotot = <a href="https://hotot.modoo.at">Hotot</a>;
-const pf = <a href="pf/portfolio.jsx">Game Graphic Portfolio</a>;
 
 const ResumeHeader = styled.header(({ theme }) => ({
   ...theme.centerPadding,
@@ -64,7 +63,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
         I am a software engineer preparing in Korean-Pangyo.<br />
         I&apos;ve been working as a 3d environment game-graphic designer for the last decade and now preparing a web front-end engineer
         and I ran a Leather Craft Studio called hotot.<br />
-        Take a look at {pf} and {hotot} and {ghLink} to see my personal projects.
+        Take a look at {hotot} and {ghLink} to see my personal projects.
       </P>
       <P>
         Feel free to take a look around and contact me with any questions.
@@ -122,6 +121,7 @@ const About = ({ data: { site: { siteMetadata: site } } }) => (
       </ResumeHeader>
       <Ul>
         <li>3d environment object modeling.</li>
+
       </Ul>
       <ResumeHeader>
         <h5>Move games &middot; Digimon RPG, Woongjin E&G</h5>
