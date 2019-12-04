@@ -10,14 +10,17 @@ const Portfolio = ({ data: { site: { siteMetadata: site } } }) => (
     <main>
       <Helmet>
         <title>
-          About
+          Protfolio
           {' '}
           &middot;
           {' '}
           {site.title}
         </title>
       </Helmet>
-      <h2>About</h2>
+      <h2>Portfolio</h2>
+      <p>
+        test test test test test
+      </p>
     </main>
   </Layout>
 );
